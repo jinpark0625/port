@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/fullpage.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/media.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="title_logo" onclick="location.href='index.html'">
+      <svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4.85 5.46" width="30px"
+        height="30px">
+        <defs>
+          <style>
+            .cls-1 {
+              fill: #222;
+            }
+          </style>
+        </defs>
+        <title>logo</title>
+        <path class="cls-1"
+          d="M23.93,22.4H23v1h.63v2.92a.63.63,0,0,1-.63.63h-.67v.95H23a1.58,1.58,0,0,0,1.55-1.58V22.4Z"
+          transform="translate(-22.31 -22.4)" />
+        <path class="cls-1"
+          d="M27.16,22.4H25.58v1h.64v1a.64.64,0,0,1-.61.63h-.7v.95h.7a1.59,1.59,0,0,0,1.56-1.58V22.4Z"
+          transform="translate(-22.31 -22.4)" />
+      </svg>
+    </div>
+
+    <div class="navicon">
+      <div id="navicon_upper"></div>
+      <div id="navicon_inner"></div>
+      <div id="navicon_lower"></div>
+    </div>
+    
+    <nav id="gnb">
+      <div class="gnb_wrap">
+        <div id="home" class="gnb_menu">
+          <a href="">Home</a>
+        </div>
+        <div id="work" class="gnb_menu" onclick="location.href='#section2'">
+          <a href="work_page/work_page.html">Work</a>
+        </div>
+        <div id="about" class="gnb_menu">
+          <a href="">About</a>
+        </div>
+        <div id="contact" class="gnb_menu">
+          <a href="">Contact</a>
+        </div>
+        <div class="cursor"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div id="fullpage">
+
+      <section id="section_1" class="section">
+        <div id="hero_wrap">
+          <div class="hero_img_wrap">
+            <!-- <img src="img/4.jpg" alt=""> -->
+          </div>
+
+          <div class="hero_text_wrap">
+            <div class="hero_text">
+              <p class="hero_text_p">
+                <span class="underline">
+                  I'm Jin,
+                </span><br>
+                Junior Front-End Developer.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section id="section_2" class="section fp-scrollable">
+        <div id="section_2_wrap">
+          <div id="about_wrap">
+            <div class="introduction">
+              <div class="introduction_text">
+                <h4>
+                  This is Me
+                </h4>
+                <div>
+                  <h3 class="intro_h3">
+                    I am a Junior Front End Developer currenlty living in Korea.
+                    I believe my obsession for design and development can translate
+                    your company and customer needs into functional and appealing website.
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  </h3>
+
+
+                  <div class="experience_wrap">
+                    <div class="skill_wrap">
+                      <div class="exp_title">
+                        <h5 class="exp_title_h5" id="exp_skill" onmouseover="expExpand(0)" onmouseout="expFold(0)">
+                          SKILLSET
+                        </h5>
+                      </div>
+                      <div class="exp_des_wrap">
+                        <div class="exp_sub_title">
+                          <h5 class="exp_sub_h5">
+                            Development
+                          </h5>
+                        </div>
+                        <div class="exp_content">
+                          <h5 class="exp_h5">
+                            HTML, CSS (SASS), JavaScript/ES6, PHP, SQL (MySQL)
+                          </h5>
+                        </div>
+                        <div lass="exp_sub_title">
+                          <h5 class="exp_sub_h5">
+                            Design
+                          </h5>
+                        </div>
+                        <div class="exp_content">
+                          <h5 class="exp_h5">
+                            Adobe Photoshop, InDesign, Illustrator, Adobe Xd, Premiere
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="education_wrap">
+                      <div class="exp_title">
+                        <h5 class="exp_title_h5" id="exp_education" onmouseover="expExpand(1)" onmouseout="expFold(1)">
+                          EDUCATION
+                        </h5>
+                      </div>
+                      <div class="exp_des_wrap">
+                      <div class="exp_sub_title">
+                        <h5 class="exp_sub_h5">
+                          Development
+                        </h5>
+                      </div>
+                        <div class="exp_content">
+                          <h5 class="exp_h5">
+                            HTML, CSS (SASS), JavaScript/ES6, PHP, SQL (MySQL)
+                          </h5>
+                        </div>
+                        <div lass="exp_sub_title">
+                          <h5 class="exp_sub_h5">
+                            Design
+                          </h5>
+                        </div>
+                        <div class="exp_content">
+                          <h5 class="exp_h5">
+                            Adobe Photoshop, InDesign, Illustrator, Adobe Xd, Premiere
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="teaching_wrap">
+                      <div class="exp_title">
+                        <h5 class="exp_title_h5" id="exp_teaching" onmouseover="expExpand(2)" onmouseout="expFold(2)">
+                          TEACHING
+                        </h5>
+                      </div>
+                      <div class="exp_des_wrap">
+                        <div class="exp_sub_title">
+                          <h5 class="exp_sub_h5">
+                            Development
+                          </h5>
+                        </div>
+                        <div class="exp_content">
+                          <h5 class="exp_h5">
+                            HTML, CSS (SASS), JavaScript/ES6, PHP, SQL (MySQL)
+                          </h5>
+                        </div>
+                        <div lass="exp_sub_title">
+                          <h5 class="exp_sub_h5">
+                            Design
+                          </h5>
+                        </div>
+                        <div class="exp_content">
+                          <h5 class="exp_h5">
+                            Adobe Photoshop, InDesign, Illustrator, Adobe Xd, Premiere
+                          </h5>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- <div class="intro_btn_wrap">
+              <a class="intro_btn" href="#">View Resume
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(75, 25, 255)" width="20px"
+                  height="20px">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+              </a>
+            </div>
+
+
+            <div id="woo" class="exp_btn_wrap" onclick="showExp()">
+              <a class="exp_btn" href="#">View experience
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(75, 25, 255)" width="20px"
+                  height="20px">
+                  <path d="M0 0h24v24H0z" fill="none" />
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+              </a>
+            </div>
+
+
+            <div class="experience_wrap">
+              <div class="skill_wrap">
+                <div class="exp_title">
+                  <h5 class="exp_title_h5">
+                    SKILLSET
+                  </h5>
+                </div>
+                <div class="exp_sub_title">
+                  <h5 class="exp_sub_h5">
+                    Development
+                  </h5>
+                </div>
+                <div class="exp_content">
+                  <h5 class="exp_h5">
+                    HTML, CSS (SASS), JavaScript/ES6, PHP, SQL (MySQL)
+                  </h5>
+                </div>
+                <div lass="exp_sub_title">
+                  <h5 class="exp_sub_h5">
+                    Design
+                  </h5>
+                </div>
+                <div class="exp_content">
+                  <h5 class="exp_h5">
+                    Adobe Photoshop, InDesign, Illustrator, Adobe Xd, Premiere
+                  </h5>
+                </div>
+              </div>
+
+              <div class="education_wrap">
+                <div class="exp_title">
+                  <h5 class="exp_title_h5">
+                    EDUCATION
+                  </h5>
+                </div>
+                <div class="exp_sub_title">
+                  <h5 class="exp_sub_h5">
+                    Development
+                  </h5>
+                </div>
+                <div class="exp_content">
+                  <h5 class="exp_h5">
+                    HTML, CSS (SASS), JavaScript/ES6, PHP, SQL (MySQL)
+                  </h5>
+                </div>
+                <div lass="exp_sub_title">
+                  <h5 class="exp_sub_h5">
+                    Design
+                  </h5>
+                </div>
+                <div class="exp_content">
+                  <h5 class="exp_h5">
+                    Adobe Photoshop, InDesign, Illustrator, Adobe Xd, Premiere
+                  </h5>
+                </div>
+              </div>
+
+              <div class="teaching_wrap">
+                <div class="exp_title">
+                  <h5 class="exp_title_h5">
+                    TEACHING
+                  </h5>
+                </div>
+                <div class="exp_sub_title">
+                  <h5 class="exp_sub_h5">
+                    Development
+                  </h5>
+                </div>
+                <div class="exp_content">
+                  <h5 class="exp_h5">
+                    HTML, CSS (SASS), JavaScript/ES6, PHP, SQL (MySQL)
+                  </h5>
+                </div>
+                <div lass="exp_sub_title">
+                  <h5 class="exp_sub_h5">
+                    Design
+                  </h5>
+                </div>
+                <div class="exp_content">
+                  <h5 class="exp_h5">
+                    Adobe Photoshop, InDesign, Illustrator, Adobe Xd, Premiere
+                  </h5>
+                </div>
+              </div>
+
+            </div> -->
+
+            </div>
+          </div>
+      </section>
+
+      <section id="section_3" class="section">
+        <div class="preview_wrap" id="preview_two">
+          <div class="preview">
+            <div class="browser">
+              <div class="browser_bar">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="browser_content" onmouseover="fadeIn(0)" onmouseout="fadeOut(0)" onclick="location.href='work/work.html'">
+                <!-- <video loop playsinline>
+              <source src="./video/main_v_1.mp4">
+            </video> -->
+                <div class="img_gradient">
+                  <div class="img_viewmore">
+                    <span class="view_project">VIEW<br>PROJECT</span>
+                  </div>
+                </div>
+                <img src="img/layer1.png" alt="Apple" onclick="location.href=('work/work.html')">
+              </div>
+            </div>
+            <div class="project_detail_mobile">
+              <div class="project_detail_mobile_mv">
+                <svg class="phone_frame" viewBox="0 0 76.27 158.18">
+                  <path class="a"
+                    d="M64.79.92H11.48A10.46,10.46,0,0,0,1,11.38V146.8a10.46,10.46,0,0,0,10.46,10.46H64.79A10.46,10.46,0,0,0,75.26,146.8V11.38A10.46,10.46,0,0,0,64.79.92Zm8,137.78a.61.61,0,0,1-.61.61H4a.61.61,0,0,1-.61-.61V17.64A.61.61,0,0,1,4,17H72.18a.61.61,0,0,1,.61.61Z">
+                  </path>
+                  <circle class="home_button" cx="37.95" cy="148.4" r="5.46"></circle>
+                  <rect class="c" x="1.01" y="0.92" width="74.25" height="156.34" rx="10.46" ry="10.46"></rect>
+                </svg>
+                <img src="img/mobile1.png" alt="Apple" onclick="location.href=('work/work.html')">
+                <!-- <video loop="" preload="true" playsinline="" id="video-90-40" poster="http://stk.works/content/uploads/2017/02/vs-mobile.png" muted="muted" autoplay="autoplay"><source src="video/vs-mobile1.mp4" type="video/mp4"></video> -->
+              </div>
+            </div>
+            <div class="prev_info_items">
+              <div class="item">
+                <span>프로젝트</span>
+                <span>Apple</span>
+              </div>
+              <div class="item">
+                <span>TYPE</span>
+                <span>Website</span>
+              </div>
+              <div class="item">
+                <span>ROLE</span>
+                <span>Web development</span>
+              </div>
+              <div class="item">
+                <div class="item_btn_wrap" onclick="location.href=('work/work.html')">
+                  <a class="item_btn" href="#">View Project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(75, 25, 255)" width="20px"
+                      height="20px">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section_4" class="section">
+        <div class="preview_wrap" id="preview_two">
+          <div class="preview">
+            <div class="browser">
+              <div class="browser_bar">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="browser_content" onmouseover="fadeIn(1)" onmouseout="fadeOut(1)">
+                <!-- <video loop playsinline>
+            <source src="./video/main_v_1.mp4">
+          </video> -->
+                <div class="img_gradient">
+                  <div class="img_viewmore">
+                    <span class="view_project">VIEW<br>PROJECT</span>
+                  </div>
+                </div>
+                <img src="img/layer2.png" alt="Starbucks" onclick="location.href=('work/work.html')">
+              </div>
+            </div>
+            <div class="project_detail_mobile">
+              <div class="project_detail_mobile_mv">
+                <svg class="phone_frame" viewBox="0 0 76.27 158.18">
+                  <path class="a"
+                    d="M64.79.92H11.48A10.46,10.46,0,0,0,1,11.38V146.8a10.46,10.46,0,0,0,10.46,10.46H64.79A10.46,10.46,0,0,0,75.26,146.8V11.38A10.46,10.46,0,0,0,64.79.92Zm8,137.78a.61.61,0,0,1-.61.61H4a.61.61,0,0,1-.61-.61V17.64A.61.61,0,0,1,4,17H72.18a.61.61,0,0,1,.61.61Z">
+                  </path>
+                  <circle class="home_button" cx="37.95" cy="148.4" r="5.46"></circle>
+                  <rect class="c" x="1.01" y="0.92" width="74.25" height="156.34" rx="10.46" ry="10.46"></rect>
+                </svg>
+                <img src="img/mobile2.png" alt="Starbucks" onclick="location.href=('work/work.html')">
+                <!-- <video loop="" preload="true" playsinline="" id="video-90-40" poster="http://stk.works/content/uploads/2017/02/vs-mobile.png" muted="muted" autoplay="autoplay"><source src="video/vs-mobile1.mp4" type="video/mp4"></video> -->
+              </div>
+            </div>
+            <div class="prev_info_items">
+              <div class="item">
+                <span>프로젝트</span>
+                <span>Starbucks</span>
+              </div>
+              <div class="item">
+                <span>TYPE</span>
+                <span>Website</span>
+              </div>
+              <div class="item">
+                <span>ROLE</span>
+                <span>Web development</span>
+              </div>
+              <div class="item">
+                <div class="item_btn_wrap" onclick="location.href=('work/work.html')">
+                  <a class="item_btn" href="#">View Project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(75, 25, 255)" width="20px"
+                      height="20px">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section_5" class="section">
+        <div class="preview_wrap" id="preview_two">
+          <div class="preview">
+            <div class="browser">
+              <div class="browser_bar">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="browser_content" onmouseover="fadeIn(2)" onmouseout="fadeOut(2)">
+                <!-- <video loop playsinline>
+            <source src="./video/main_v_1.mp4">
+          </video> -->
+                <div class="img_gradient">
+                  <div class="img_viewmore">
+                    <span class="view_project">VIEW<br>PROJECT</span>
+                  </div>
+                </div>
+                <img src="img/layer3.png" alt="Sticky Monster Lab" onclick="location.href=('work/work.html')">
+              </div>
+            </div>
+            <div class="project_detail_mobile">
+              <div class="project_detail_mobile_mv">
+                <svg class="phone_frame" viewBox="0 0 76.27 158.18">
+                  <path class="a"
+                    d="M64.79.92H11.48A10.46,10.46,0,0,0,1,11.38V146.8a10.46,10.46,0,0,0,10.46,10.46H64.79A10.46,10.46,0,0,0,75.26,146.8V11.38A10.46,10.46,0,0,0,64.79.92Zm8,137.78a.61.61,0,0,1-.61.61H4a.61.61,0,0,1-.61-.61V17.64A.61.61,0,0,1,4,17H72.18a.61.61,0,0,1,.61.61Z">
+                  </path>
+                  <circle class="home_button" cx="37.95" cy="148.4" r="5.46"></circle>
+                  <rect class="c" x="1.01" y="0.92" width="74.25" height="156.34" rx="10.46" ry="10.46"></rect>
+                </svg>
+                <img src="img/mobile3.png" alt="Sticky Monster Lab" onclick="location.href=('work/work.html')">
+                <!-- <video loop="" preload="true" playsinline="" id="video-90-40" poster="http://stk.works/content/uploads/2017/02/vs-mobile.png" muted="muted" autoplay="autoplay"><source src="video/vs-mobile1.mp4" type="video/mp4"></video> -->
+              </div>
+            </div>
+            <div class="prev_info_items">
+              <div class="item">
+                <span>프로젝트</span>
+                <span>Sticky Monster Lab</span>
+              </div>
+              <div class="item">
+                <span>TYPE</span>
+                <span>Website</span>
+              </div>
+              <div class="item">
+                <span>ROLE</span>
+                <span>Web development</span>
+              </div>
+              <div class="item">
+                <div class="item_btn_wrap" onclick="location.href=('work/work.html')">
+                  <a class="item_btn" href="#">View Project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(75, 25, 255)" width="20px"
+                      height="20px">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section_6" class="section">
+        <div class="preview_wrap" id="preview_two">
+          <div class="preview">
+            <div class="browser">
+              <div class="browser_bar">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="browser_content" onmouseover="fadeIn(3)" onmouseout="fadeOut(3)">
+                <!-- <video loop playsinline>
+            <source src="./video/main_v_1.mp4">
+          </video> -->
+                <div class="img_gradient">
+                  <div class="img_viewmore">
+                    <span class="view_project">VIEW<br>PROJECT</span>
+                  </div>
+                </div>
+                <img src="img/layer4.png" alt="Nike" onclick="location.href=('work/work.html')">
+              </div>
+            </div>
+            <div class="project_detail_mobile">
+              <div class="project_detail_mobile_mv">
+                <svg class="phone_frame" viewBox="0 0 76.27 158.18">
+                  <path class="a"
+                    d="M64.79.92H11.48A10.46,10.46,0,0,0,1,11.38V146.8a10.46,10.46,0,0,0,10.46,10.46H64.79A10.46,10.46,0,0,0,75.26,146.8V11.38A10.46,10.46,0,0,0,64.79.92Zm8,137.78a.61.61,0,0,1-.61.61H4a.61.61,0,0,1-.61-.61V17.64A.61.61,0,0,1,4,17H72.18a.61.61,0,0,1,.61.61Z">
+                  </path>
+                  <circle class="home_button" cx="37.95" cy="148.4" r="5.46"></circle>
+                  <rect class="c" x="1.01" y="0.92" width="74.25" height="156.34" rx="10.46" ry="10.46"></rect>
+                </svg>
+                <img src="img/mobile4.png" alt="Nike" onclick="location.href=('work/work.html')">
+                <!-- <video loop="" preload="true" playsinline="" id="video-90-40" poster="http://stk.works/content/uploads/2017/02/vs-mobile.png" muted="muted" autoplay="autoplay"><source src="video/vs-mobile1.mp4" type="video/mp4"></video> -->
+              </div>
+            </div>
+            <div class="prev_info_items">
+              <div class="item">
+                <span>프로젝트</span>
+                <span>Nike</span>
+              </div>
+              <div class="item">
+                <span>TYPE</span>
+                <span>Website</span>
+              </div>
+              <div class="item">
+                <span>ROLE</span>
+                <span>Web development</span>
+              </div>
+              <div class="item">
+                <div class="item_btn_wrap" onclick="location.href=('work/work.html')">
+                  <a class="item_btn" href="#">View Project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(75, 25, 255)" width="20px"
+                      height="20px">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section_7" class="section">
+        <div class="preview_wrap" id="preview_two">
+          <div class="preview">
+            <div class="browser">
+              <div class="browser_bar">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="browser_content" onmouseover="fadeIn(4)" onmouseout="fadeOut(4)">
+                <!-- <video loop playsinline>
+          <source src="./video/main_v_1.mp4">
+        </video> -->
+                <div class="img_gradient">
+                  <div class="img_viewmore">
+                    <span class="view_project">VIEW<br>PROJECT</span>
+                  </div>
+                </div>
+                <img src="img/layer5.png" alt="Coscoi" onclick="location.href=('work/work.html')">
+              </div>
+            </div>
+            <div class="project_detail_mobile">
+              <div class="project_detail_mobile_mv">
+                <svg class="phone_frame" viewBox="0 0 76.27 158.18">
+                  <path class="a"
+                    d="M64.79.92H11.48A10.46,10.46,0,0,0,1,11.38V146.8a10.46,10.46,0,0,0,10.46,10.46H64.79A10.46,10.46,0,0,0,75.26,146.8V11.38A10.46,10.46,0,0,0,64.79.92Zm8,137.78a.61.61,0,0,1-.61.61H4a.61.61,0,0,1-.61-.61V17.64A.61.61,0,0,1,4,17H72.18a.61.61,0,0,1,.61.61Z">
+                  </path>
+                  <circle class="home_button" cx="37.95" cy="148.4" r="5.46"></circle>
+                  <rect class="c" x="1.01" y="0.92" width="74.25" height="156.34" rx="10.46" ry="10.46"></rect>
+                </svg>
+                <img src="img/mobile5.png" alt="Coscoi" onclick="location.href=('work/work.html')">
+                <!-- <video loop="" preload="true" playsinline="" id="video-90-40" poster="http://stk.works/content/uploads/2017/02/vs-mobile.png" muted="muted" autoplay="autoplay"><source src="video/vs-mobile1.mp4" type="video/mp4"></video> -->
+              </div>
+            </div>
+            <div class="prev_info_items">
+              <div class="item">
+                <span>프로젝트</span>
+                <span>Coscoi</span>
+              </div>
+              <div class="item">
+                <span>TYPE</span>
+                <span>Website</span>
+              </div>
+              <div class="item">
+                <span>ROLE</span>
+                <span>Web development</span>
+              </div>
+              <div class="item">
+                <div class="item_btn_wrap" onclick="location.href=('work/work.html')">
+                  <a class="item_btn" href="#">View Project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(75, 25, 255)" width="20px"
+                      height="20px">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="section_8" class="section">
+        <div class="preview_wrap" id="preview_two">
+          <div class="preview">
+            <div class="browser">
+              <div class="browser_bar">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+              </div>
+              <div class="browser_content" onmouseover="fadeIn(5)" onmouseout="fadeOut(5)">
+                <!-- <video loop playsinline>
+          <source src="./video/main_v_1.mp4">
+        </video> -->
+                <div class="img_gradient">
+                  <div class="img_viewmore">
+                    <span class="view_project">VIEW<br>PROJECT</span>
+                  </div>
+                </div>
+                <img src="img/layer6.png" alt="Netflix" onclick="location.href=('work/work.html')">
+              </div>
+            </div>
+            <div class="project_detail_mobile">
+              <div class="project_detail_mobile_mv">
+                <svg class="phone_frame" viewBox="0 0 76.27 158.18">
+                  <path class="a"
+                    d="M64.79.92H11.48A10.46,10.46,0,0,0,1,11.38V146.8a10.46,10.46,0,0,0,10.46,10.46H64.79A10.46,10.46,0,0,0,75.26,146.8V11.38A10.46,10.46,0,0,0,64.79.92Zm8,137.78a.61.61,0,0,1-.61.61H4a.61.61,0,0,1-.61-.61V17.64A.61.61,0,0,1,4,17H72.18a.61.61,0,0,1,.61.61Z">
+                  </path>
+                  <circle class="home_button" cx="37.95" cy="148.4" r="5.46"></circle>
+                  <rect class="c" x="1.01" y="0.92" width="74.25" height="156.34" rx="10.46" ry="10.46"></rect>
+                </svg>
+                <img src="img/mobile6.png" alt="Netflix" onclick="location.href=('work/work.html')">
+                <!-- <video loop="" preload="true" playsinline="" id="video-90-40" poster="http://stk.works/content/uploads/2017/02/vs-mobile.png" muted="muted" autoplay="autoplay"><source src="video/vs-mobile1.mp4" type="video/mp4"></video> -->
+              </div>
+            </div>
+            <div class="prev_info_items">
+              <div class="item">
+                <span>프로젝트</span>
+                <span>Netflix</span>
+              </div>
+              <div class="item">
+                <span>TYPE</span>
+                <span>Website</span>
+              </div>
+              <div class="item">
+                <span>ROLE</span>
+                <span>Web development</span>
+              </div>
+              <div class="item">
+                <div class="item_btn_wrap" onclick="location.href=('work/work.html')">
+                  <a class="item_btn" href="#">View Project
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="rgb(75, 25, 255)" width="20px"
+                      height="20px">
+                      <path d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" /></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section fp-auto-height">
+        <div id="footer">
+          <div class="footer_wrap">
+            <div class="say_hello">
+              <a href="mailto:jinpark0625@gmail.com?Subject=Hello" target="_top" class="say_hi" onmouseover="hi()"
+                onmouseout="bye()">
+                Want to say hi?
+              </a>
+              <a href="mailto:jinpark0625@gmail.com?Subject=Hello" target="_top" class="say_bye" onmouseover="hi()"
+                onmouseout="bye()">
+                Hello Jin~!
+              </a>
+            </div>
+            <div class="footer_contact_wrap">
+              <div class="footer_contact">
+                <div>
+                  <a href="mailto:jinpark0625@gmail.com?Subject=Hello" target="_top">
+                    jinpark0625@gmail.com
+                  </a>
+                </div>
+                <div class="phone_num">
+                  010-2390-0625
+                </div>
+                <div class="footer_social">
+                  <div>
+                    <a href="#">
+                      LinkedIn
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#">
+                      Instagram
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer_copyright">
+                <div>© 2020 by Jin Park ALL RIGHTS RESERVED.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="js/index.js"></script>
+
+  <script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <script type="text/javascript" src="js/fullpage.js"></script>
+
+  <script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+
+      verticalCentered: true,
+      navigation: true,
+      navigationPosition: 'left',
+      scrollingSpeed: 1000,
+      afterResize: function (width, height) { },
+      scrollOverflow: true
+
+    });
+
+  </script>
+
+</body>
+
+</html>
